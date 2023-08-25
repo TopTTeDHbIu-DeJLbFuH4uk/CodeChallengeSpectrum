@@ -1,27 +1,132 @@
+/*body {*/
+/*    background-color: #16171b;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!* main container *!*/
+/*.main-container {*/
+/*    background-color: #121216;*/
+/*    width: 50px;*/
+/*    height: 100vh;*/
+/*    border-right: 1px solid #2a2a2e;*/
+/*}*/
+
+/*!* logo *!*/
+/*.logo {*/
+/*    position: absolute;*/
+/*    padding-top: 10px;*/
+/*    padding-left: 3px;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*!* difficult *!*/
+/*.difficult {*/
+/*    position: absolute;*/
+/*    z-index: 1;*/
+/*    top: 65px;*/
+/*    padding-left: 10px;*/
+
+/*    font-size: .75rem;*/
+/*    line-height: 1rem; !* высота строки текста *!*/
+/*    font-weight: 700;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: .1em; !* межбуквенное расстояние *!*/
+/*    color: transparent;*/
+/*    transition: 0.3s ease;*/
+/*}*/
+
+/*.main-container:hover .difficult {*/
+/*    color: #939393;*/
+/*    transition: 0.3s ease;*/
+/*}*/
+
+/*!* difficult easy *!*/
+/*.easy-difficult {*/
+/*    position: absolute;*/
+/*    z-index: 2;*/
+/*    padding-left: 3px;*/
+
+/*    display: flex;*/
+/*    !*height: 80px;*!*/
+/*    !*width: 50px;*!*/
+/*    top: 100px;*/
+/*    transition: 0.3s ease;*/
+/*}*/
+
+/*.background-easy {*/
+/*    position: fixed;*/
+/*    !*z-index: 1;*!*/
+/*    top: 100px;*/
+/*    left: -270px;*/
+/*    width: 320px;*/
+/*}*/
+
+/*.main-container:hover .background-easy {*/
+/*    left: 0;*/
+/*    width: 320px;*/
+/*    transition: all 0.5s ease;*/
+/*    background-color: #2a2a2e;*/
+/*}*/
+
+/*!* drop right menu *!*/
+/*.drop-right-menu {*/
+/*    position: relative;*/
+/*    background-color: #121216;*/
+/*    border-right: 1px solid #2a2a2e;*/
+/*    width: 320px;*/
+/*    !*height: 100vh;*!*/
+
+/*    left: -270px;*/
+/*    transition: all 0.5s ease;*/
+/*}*/
+
+/*.main-container:hover .drop-right-menu{*/
+/*    left: 0;*/
+/*    width: 320px;*/
+/*    transition: all 0.5s ease;*/
+/*}*/
+
+/* new code */
 body {
     background-color: #16171b;
     margin: 0;
     padding: 0;
 }
 
+/* main container */
 .main-container {
     background-color: #121216;
-    /*width: 320px;*/
     width: 50px;
     height: 100vh;
     border-right: 1px solid #2a2a2e;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 50px;
+}
+
 .logo {
-    padding-top: 10px;
-    padding-left: 3px;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
 }
 
 .drop-right-menu {
     background-color: #121216;
     border-right: 1px solid #2a2a2e;
     width: 320px;
-    height: 100vh;
-    display: none;
+    visibility:hidden;
+    transition: all 0.5s ease;;
 }
 
+.main-container:hover .drop-right-menu {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
