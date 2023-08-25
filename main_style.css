@@ -1,0 +1,27 @@
+body {
+    background-color: #16171b;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-color: #121216;
+    /*width: 320px;*/
+    width: 50px;
+    height: 100vh;
+    border-right: 1px solid #2a2a2e;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+.drop-right-menu {
+    background-color: #121216;
+    border-right: 1px solid #2a2a2e;
+    width: 320px;
+    height: 100vh;
+    display: none;
+}
+
