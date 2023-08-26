@@ -28,12 +28,10 @@ const difficult = document.getElementById('difficult');
 mainContainer.addEventListener('mouseenter', () => {
    difficult.style.color = '#8e8f8f';
    difficult.style.transition = '0.2s ease';
-   difficult.style.zIndex = '1';
 });
 
 mainContainer.addEventListener('mouseleave', () => {
    difficult.style.color = 'transparent';
-   difficult.style.zIndex = '-1';
 });
 
 // home

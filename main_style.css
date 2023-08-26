@@ -69,7 +69,6 @@ body {
     text-transform: uppercase;
     letter-spacing: .1em; /* межбуквенное расстояние */
     color: transparent;
-    z-index: -1;
 
     display: flex;
     height: 40px;
