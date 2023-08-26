@@ -1,18 +1,3 @@
-/*.difficult {*/
-/*    position: absolute;*/
-/*    z-index: 1;*/
-/*    top: 65px;*/
-/*    padding-left: 10px;*/
-
-/*    font-size: .75rem;*/
-/*    line-height: 1rem; !* высота строки текста *!*/
-/*    font-weight: 700;*/
-/*    text-transform: uppercase;*/
-/*    letter-spacing: .1em; !* межбуквенное расстояние *!*/
-/*    color: transparent;*/
-/*    transition: 0.3s ease;*/
-/*}*/
-
 body {
     background-color: #16171b;
     margin: 0;
@@ -28,18 +13,123 @@ body {
 }
 
 /* container logo */
-.container {
+.container-unrated {
     height: 60px;
     width: 50px;
 }
 
 .logo {
+    position: relative;
     display: flex;
     height: 60px;
     width: 50px;
     align-items: center;
     justify-content: center;
 }
+
+/* home */
+.home {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.home-text {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* difficult */
+.difficult {
+    font-size: .85rem;
+    line-height: 1rem; /* высота строки текста */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em; /* межбуквенное расстояние */
+    color: transparent;
+
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 10px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* difficult easy */
+.container-easy {
+    height: 60px;
+    width: 50px;
+}
+
+.logo-easy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50px;
+}
+
+.difficult-easy {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-difficult-easy {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*.difficult-easy:hover {*/
+/*    color: blue;*/
+/*}*/
 
 /* drop right menu */
 .drop-right-menu {
