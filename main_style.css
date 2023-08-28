@@ -10,15 +10,27 @@ body {
     width: 50px;
     height: 100vh;
     border-right: 1px solid #2a2a2e;
+    transition: width 0.3s ease;
 }
 
-/* container logo */
+.main-container:hover {
+    width: 320px;
+    transition: width 0.3s ease;
+    background-color: #121216;
+    border-right: 1px solid #2a2a2e
+}
+
+/* container unrated */
 .container-unrated {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     width: 50px;
+    cursor: pointer;
 }
 
-.logo {
+.icon-logo-unrated {
     position: relative;
     display: flex;
     height: 60px;
@@ -27,12 +39,12 @@ body {
     justify-content: center;
 }
 
-/* home */
-.home {
+.home-page-label {
     font-size: 20px;
     line-height: 1.5rem;
     font-weight: 700;
     color: transparent;
+
     z-index: -1;
 
     position: absolute;
@@ -43,14 +55,18 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    transition: 0s;
 }
 
-.home-text {
+.home-page-text {
     padding-bottom: 0.25rem;
     font-size: 15px;
     line-height: 1rem;
     white-space: nowrap;
     color: transparent;
+
+    z-index: -1;
 
     position: absolute;
     top: 30px;
@@ -59,6 +75,15 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .home-page-label,
+.main-container:hover .home-page-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
 }
 
 /* difficult */
@@ -79,28 +104,40 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .difficult {
+    color: #8e8f8f;
+    transition: 0.4s linear;
 }
 
 /* difficult easy */
 .container-easy {
-    height: 60px;
-    width: 50px;
-}
-
-.logo-easy {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 50px;
+    cursor: pointer;
 }
 
-.difficult-easy {
+.icon-logo-easy {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.difficult-easy-label {
     font-size: 20px;
     line-height: 1.5rem;
     font-weight: 700;
     color: transparent;
+
     z-index: -1;
 
     position: absolute;
@@ -111,14 +148,17 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    transition: 0s;
 }
 
-.text-difficult-easy {
+.difficult-easy-text {
     padding-bottom: 0.25rem;
     font-size: 15px;
     line-height: 1rem;
     white-space: nowrap;
     color: transparent;
+
     z-index: -1;
 
     position: absolute;
@@ -128,10 +168,81 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    transition: 0s;
 }
 
-/* drop right menu */
-.drop-right-menu {
-    background-color: #121216;
-    border-right: 1px solid #2a2a2e;
+.main-container:hover .difficult-easy-label,
+.main-container:hover .difficult-easy-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
 }
+
+/* container normal */
+.container-normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.icon-logo-normal {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.difficult-normal-label {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.difficult-normal-text {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .difficult-normal-label,
+.main-container:hover .difficult-normal-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+/* container hard */
