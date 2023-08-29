@@ -1,0 +1,106 @@
+.container-popup-modal-window-easy {
+    position: absolute;
+    top: 200px;
+    left: 600px;
+
+    display: none;
+}
+
+.popup-modal-window-easy {
+    width: 700px;
+    height: 500px;
+    background-color: #242428;
+    border: 25px solid #3f414b;
+    padding: 15px;
+    overflow: auto;
+}
+
+/* BUTTON CONTINUE */
+.container-button-continue-easy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.btn-continue-easy {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    background: #666669;
+
+    font-size: 20px;
+    color: #c1c1c1;
+
+    cursor: pointer;
+}
+
+.btn-continue-easy:hover {
+    background-color: blue;
+}
+
+/* ICON CLOSE CONTAINER */
+.icon-close-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-close-window {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+svg:hover polygon {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+/* CONTAINER JS */
+.language-main-container-JS {
+    width: 80px;
+    height: 80px;
+    background-color: #161618;
+    border: 1px solid #2a2a2e;
+
+    position: absolute;
+    left: 800px;
+    top: 0;
+
+    transition: 0s;
+    cursor: pointer;
+}
+
+.language-main-container-JS:hover {
+    background-color: #666669;
+    transition: 0.4s ease;
+}
+
+.language-main-container-JS:hover svg path {
+    fill: yellow;
+    transition: 0.4s ease;
+}
+
+.language-container-JS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+/* MODAL WINDOW TEXT */
+.popup-modal-window-easy-text {
+    font-size: 20px;
+    color: #c1c1c1;
+    position: relative;
+}

@@ -50,3 +50,59 @@ containerNormal.addEventListener('mouseout', () => {
    difficultNormalLabel.style.color = '';
 });
 
+// Container hard
+const containerHard = document.querySelector('.container-hard');
+const difficultHardLabel = document.querySelector('.difficult-hard-label');
+containerHard.addEventListener('mousemove', () => {
+   containerHard.style.width = 'auto';
+   containerHard.style.backgroundColor = '#2a2a2e';
+   containerHard.style.display = 'block';
+   containerHard.style.transition = 'width 0.3s ease';
+
+   difficultHardLabel.style.color = 'yellow';
+});
+
+containerHard.addEventListener('mouseout', () => {
+   containerHard.style.backgroundColor = '#121216';
+   containerHard.style.transition = 'width 0.3s ease';
+
+   difficultHardLabel.style.color = '';
+});
+
+// Container harder
+const containerHarder = document.querySelector('.container-harder');
+const difficultHarderLabel = document.querySelector('.difficult-harder-label');
+containerHarder.addEventListener('mousemove', () => {
+   containerHarder.style.width = 'auto';
+   containerHarder.style.backgroundColor = '#2a2a2e';
+   containerHarder.style.display = 'block';
+   containerHarder.style.transition = 'width 0.3s ease';
+
+   difficultHarderLabel.style.color = 'red';
+});
+
+containerHarder.addEventListener('mouseout', () => {
+   containerHarder.style.backgroundColor = '#121216';
+   containerHarder.style.transition = 'width 0.3s ease';
+
+   difficultHarderLabel.style.color = '';
+});
+
+// Container insane
+const containerInsane = document.querySelector('.container-insane');
+const difficultInsaneLabel = document.querySelector('.difficult-insane-label');
+containerInsane.addEventListener('mousemove', () => {
+   containerInsane.style.width = 'auto';
+   containerInsane.style.backgroundColor = '#2a2a2e';
+   containerInsane.style.display = 'block';
+   containerInsane.style.transition = 'width 0.3s ease';
+
+   difficultInsaneLabel.style.color = 'purple';
+});
+
+containerInsane.addEventListener('mouseout', () => {
+   containerInsane.style.backgroundColor = '#121216';
+   containerInsane.style.transition = 'width 0.3s ease';
+
+   difficultInsaneLabel.style.color = '';
+});

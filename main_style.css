@@ -120,7 +120,13 @@ body {
     align-items: center;
     height: 60px;
     width: 50px;
+
     cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .icon-logo-easy {
@@ -186,7 +192,13 @@ body {
     align-items: center;
     height: 60px;
     width: 50px;
+
     cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .icon-logo-normal {
@@ -246,3 +258,217 @@ body {
 }
 
 /* container hard */
+.container-hard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.icon-logo-hard {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.difficult-hard-label {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.difficult-hard-text {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .difficult-hard-label,
+.main-container:hover .difficult-hard-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+/* container harder */
+.container-harder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.icon-logo-harder {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.difficult-harder-label {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.difficult-harder-text {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .difficult-harder-label,
+.main-container:hover .difficult-harder-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+/* container insane */
+.container-insane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.icon-insane-logo {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.difficult-insane-label {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.difficult-insane-text {
+    padding-bottom: 0.25rem;
+    font-size: 15px;
+    line-height: 1rem;
+    white-space: nowrap;
+    color: transparent;
+
+    z-index: -1;
+
+    position: absolute;
+    top: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: 0s;
+}
+
+.main-container:hover .difficult-insane-label,
+.main-container:hover .difficult-insane-text {
+    color: #c1c1c1;
+    z-index: 1;
+    transition: 0.5s linear;
+}
