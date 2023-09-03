@@ -1,0 +1,145 @@
+.sidebar-container-top {
+    position: absolute;
+    background-color: #121216;
+    width: 240px;
+    max-height: 50px;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* SIDEBAR ASSISTANTS */
+.sidebar-assistants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.drop-menu-sidebar-assistants {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 50px;
+    width: 240px;
+    background-color: #121216;
+    border-bottom-left-radius: 10px;
+
+    transform: translateY(-50px);
+    z-index: -1;
+}
+
+.drop-menu-sidebar-assistants:hover {
+    background-color: #24242c;
+}
+
+.sidebar-assistants:hover .sidebar-container-top,
+.sidebar-assistants:hover .drop-menu-sidebar-assistants{
+    transform: translateY(0);
+    transition: 0.3s ease;
+}
+
+.sidebar-assistants:hover svg path,
+.sidebar-assistants:hover svg line {
+    stroke: #bb432c;
+}
+
+.icon-react {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 50px;
+    width: 60px;
+}
+
+.user-name-text {
+    white-space: nowrap;
+    padding-left: 10px;
+    color: #c1c1c1;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+/* gitHub PAGE*/
+.gitHub-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.gitHub-page:hover svg .cls-1 {
+    fill: #bb432c;
+}
+
+/* SWITCHER MODE THEME */
+.switcher-mode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.switcher-mode-container:hover path {
+    fill: #bb432c;
+}
+
+/* SWITCHER LANGUAGE */
+.switcher-language-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.language-EN {
+    color: #c1c1c1;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.switcher-language-container:hover .language-EN{
+    color: #bb432c;
+}
+
+.drop-menu-sidebar-language {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 50px;
+    width: 240px;
+    background-color: #121216;
+    border-bottom-left-radius: 10px;
+
+    transform: translateY(-50px);
+    z-index: -1;
+}
+
+.drop-menu-sidebar-language:hover {
+    background-color: #24242c;
+}
+
+.switcher-language-container:hover .drop-menu-sidebar-language {
+    transform: translateY(0);
+    transition: 0.3s ease;
+}
+
+.language-RU {
+    color: #c1c1c1;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+    white-space: nowrap;
+}

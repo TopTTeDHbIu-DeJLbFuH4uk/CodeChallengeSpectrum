@@ -1,6 +1,6 @@
 .container-popup-modal-window-easy {
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 600px;
 
     display: none;
@@ -10,59 +10,10 @@
     width: 700px;
     height: 500px;
     background-color: #242428;
-    border: 25px solid #3f414b;
+    border: 25px solid #1d228d;
     padding: 15px;
     overflow: auto;
-}
-
-/* BUTTON CONTINUE */
-.container-button-continue-easy {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 30px;
-}
-
-.btn-continue-easy {
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 30px;
-    background: #666669;
-
-    font-size: 20px;
-    color: #c1c1c1;
-
-    cursor: pointer;
-}
-
-.btn-continue-easy:hover {
-    background-color: blue;
-}
-
-/* ICON CLOSE CONTAINER */
-.icon-close-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-}
-
-.icon-close-window {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-svg:hover polygon {
-    fill: white;
-    transition: fill 0.3s ease;
+    border-radius: 10px;
 }
 
 /* CONTAINER JS */
@@ -99,8 +50,58 @@ svg:hover polygon {
 }
 
 /* MODAL WINDOW TEXT */
+.header-easy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+}
+
 .popup-modal-window-easy-text {
     font-size: 20px;
     color: #c1c1c1;
+    top: 10px;
     position: relative;
+}
+
+/* BUTTONS */
+.container-buttons-easy {
+    display: flex;
+    width: 700px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-close-easy {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 50px;
+    background: #836e6e none;
+    box-shadow: none;
+
+    font-size: 25px;
+}
+
+.btn-continue-easy {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 50px;
+    background: #836e6e none;
+    box-shadow: none;
+
+    font-size: 25px;
+}
+
+.btn-close-easy:hover {
+    color: darkred;
+}
+
+.btn-continue-easy:hover {
+    color: green;
 }
