@@ -7,4 +7,4 @@ modalWindowDifficultyEasy.addEventListener('click', () => {
 const closeWindow = document.querySelector('.btn-close-easy');
 closeWindow.addEventListener('click', () => {
    containerPopupModalWindowEasy.style.display = 'none';
-})
+});
