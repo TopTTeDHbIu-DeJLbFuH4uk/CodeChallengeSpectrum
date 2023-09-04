@@ -1,49 +1,37 @@
 const langArray = {
-    'tittle': {
-        'en': 'CodeChallengeSpectrum',
-        'ru': 'Тест',
-    },
-    'HomeDescription': {
+    'homeDescription': {
         'en': 'Go home to choose a different difficulty',
-        'ru': 'Иди домой, чтобы выбрать другую сложность',
+        'ru': 'Вернуться домой',
     },
-    'EasyDescription': {
+    'easyDescription': {
         'en': 'Beginner-friendly challenges',
         'ru': 'Задачи для начинающих',
     },
-    'NormalDescription': {
+    'normalDescription': {
         'en': 'Intermediate tasks for growth',
         'ru': 'Промежуточные задачи для роста',
     },
-    'HardDescription': {
+    'hardDescription': {
         'en': 'Challenging codes',
         'ru': 'Испытание кодов',
     },
-    'HarderDescription': {
+    'harderDescription': {
         'en': 'Advanced trials',
         'ru': 'Продвинутые испытания',
     },
-    'InsaneDescription': {
+    'insaneDescription': {
         'en': 'Mind-bending tests',
         'ru': 'Умопомрачительные тесты',
     },
 };
 
-function translateText(lng) {
-    const elementsToTranslate = document.querySelectorAll('.lng');
-
-    elementsToTranslate.forEach((element) => {
-        const key = element.getAttribute('data-translate');
-        if (langArray[key] && langArray[key][lng]) {
-            element.textContent = langArray[key][lng];
-        }
+const langElements = document.querySelectorAll('.lang');
+function switchLanguage() {
+    const currentLanguage = langElements[0].textContent === langArray.homeDescription.en ? 'ru' : 'en';
+    langElements.forEach((element) => {
+       const translationKey = element.getAttribute('data-translate');
+       element.textContent = langArray[translationKey][currentLanguage];
     });
 }
-
-document.querySelector('.drop-menu-sidebar-language').addEventListener('click', function () {
-    const currentLang = document.documentElement.lang || 'en';
-    const newLang = currentLang === 'en' ? 'ru' : 'en';
-    document.documentElement.lang = newLang;
-
-    translateText(newLang);
-});
+const switchButton = document.getElementById('switcher');
+switchButton.addEventListener('click', switchLanguage);

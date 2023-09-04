@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="main_style.css">
     <link rel="stylesheet" href="popup_modal_window_easy.css">
     <link rel="stylesheet" href="sidebar.css">
+
+    <!--  icon header site  -->
+    <link rel="icon" href="./others/CodeSandBox.svg">
     <title>CodeChallengeSpectrum</title>
 </head>
 <body>
@@ -94,7 +97,7 @@
     </div>
     <div class="switcher-language-container">
         <div class="language-EN">EN</div>
-        <div class="drop-menu-sidebar-language">
+        <div class="drop-menu-sidebar-language" id="switcher">
             <div class="language-RU">Russian Language RU</div>
         </div>
     </div>
@@ -108,7 +111,7 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name">Home</div>
-                    <div class="side-menu-item-text-description lng" data-translation="HomeDescription">Go home to choose a different difficulty</div>
+                    <div class="side-menu-item-text-description lang" data-translate="homeDescription">Go home to choose a different difficulty</div>
                 </div>
             </div>
             <div class="side-menu-text-difficult">Difficulty</div>
@@ -118,7 +121,7 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name color-blue">Easy</div>
-                    <div class="side-menu-item-text-description lng" data-translation="EasyDescription">Beginner-friendly challenges</div>
+                    <div class="side-menu-item-text-description lang" data-translate="easyDescription">Beginner-friendly challenges</div>
                 </div>
             </div>
             <div class="side-menu-item">
@@ -127,7 +130,7 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name color-green">Normal</div>
-                    <div class="side-menu-item-text-description lng" data-translation="NormalDescription">Intermediate tasks for growth</div>
+                    <div class="side-menu-item-text-description lang" data-translate="normalDescription">Intermediate tasks for growth</div>
                 </div>
             </div>
             <div class="side-menu-item">
@@ -136,7 +139,7 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name color-yellow">Hard</div>
-                    <div class="side-menu-item-text-description lng" data-translation="HardDescription">Challenging codes</div>
+                    <div class="side-menu-item-text-description lang" data-translate="hardDescription">Challenging codes</div>
                 </div>
             </div>
             <div class="side-menu-item">
@@ -145,7 +148,7 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name color-red">Harder</div>
-                    <div class="side-menu-item-text-description lng" data-translation="HarderDescription">Advanced trials</div>
+                    <div class="side-menu-item-text-description lang" data-translate="harderDescription">Advanced trials</div>
                 </div>
             </div>
             <div class="side-menu-item">
@@ -154,34 +157,28 @@
                 </div>
                 <div class="side-menu-item-text">
                     <div class="side-menu-item-text-name color-purple">Insane</div>
-                    <div class="side-menu-item-text-description lng" data-translation="InsaneDescription">Mind-bending tests</div>
+                    <div class="side-menu-item-text-description lang" data-translate="insaneDescription">Mind-bending tests</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-popup-modal-window-easy" id="containerPopupModalWindowEasy">
-    <div class="popup-modal-window-easy">
-        <div class="language-main-container-JS">
-            <div class="language-container-JS">
-                <svg width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <title>nodejs</title>
-                    <rect width="24" height="24" fill="none"/>
-                    <path d="M12,1.85a1.62,1.62,0,0,0-.78.2L3.78,6.35A1.58,1.58,0,0,0,3,7.71v8.58a1.58,1.58,0,0,0,.78,1.36l2,1.12a3.24,3.24,0,0,0,1.71.47,2.07,2.07,0,0,0,2.21-2.33V8.44a.22.22,0,0,0-.22-.22H8.5a.22.22,0,0,0-.23.22v8.47c0,.66-.68,1.31-1.77.76l-2-1.17a.26.26,0,0,1-.11-.21V7.71a.24.24,0,0,1,.11-.21l7.44-4.29a.22.22,0,0,1,.22,0L19.55,7.5a.24.24,0,0,1,.11.21v8.58a.26.26,0,0,1-.11.21l-7.44,4.29a.24.24,0,0,1-.23,0L10,19.65a.26.26,0,0,0-.21,0,4.22,4.22,0,0,1-1.12.51c-.12,0-.31.11.07.32l2.48,1.47a1.55,1.55,0,0,0,1.56,0l7.44-4.29A1.58,1.58,0,0,0,21,16.29V7.71a1.58,1.58,0,0,0-.78-1.36l-7.44-4.3a1.59,1.59,0,0,0-.78-.2M14,8c-2.12,0-3.39.89-3.39,2.39s1.26,2.08,3.3,2.28c2.43.24,2.62.6,2.62,1.08,0,.83-.67,1.18-2.23,1.18-2,0-2.4-.49-2.55-1.47a.23.23,0,0,0-.22-.18h-1a.21.21,0,0,0-.21.22c0,1.24.68,2.74,3.94,2.74,2.35,0,3.7-.93,3.7-2.55s-1.08-2-3.37-2.34-2.54-.46-2.54-1,.2-1,1.91-1c1.5,0,2.09.33,2.32,1.36a.21.21,0,0,0,.21.17h1a.19.19,0,0,0,.15-.07.16.16,0,0,0,.05-.16C17.56,8.82,16.38,8,14,8Z"
-                          fill="white"/>
-                </svg>
+<div class="container-modal-window-easy-difficult" id="containerModalWindowEasyDifficult">
+    <div class="modal-window-easy-difficult">
+        <div class="header-easy-difficult">EASY</div>
+        <div class="content-wrapper">
+            <div class="text-modal-window-easy-difficult">
+                The Easy difficulty level on our website is the perfect starting point for those who are just beginning
+                their journey into the world of tasks and challenges. Here, you will find puzzles and tasks that provide an
+                inspiring challenge but won't be overly difficult. With this level of difficulty, you can familiarize
+                yourself with basic concepts and patterns, which will gradually help you develop your skills and move on to
+                more serious challenges. Raise the bar of your knowledge with ease and confidence as you prepare for more
+                complex trials ahead.
             </div>
         </div>
-        <div class="header-easy">EASY</div>
-            <div class="popup-modal-window-easy-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti hic nemo neque quam sit. Aliquid
-                architecto, aspernatur consectetur dolor dolores dolorum ea eius excepturi magni maiores molestiae
-                mollitia nam nemo neque nobis nulla pariatur provident quod quos recusandae repellat tempore totam?
-                Corporis earum explicabo illo quia quibusdam temporibus. Autem, consequuntur!
-            </div>
-        <div class="container-buttons-easy">
-            <button class="btn-close-easy">Close</button>
-            <button class="btn-continue-easy">Continue</button>
+        <div class="container-btn">
+            <button class="close-btn">CLOSE</button>
+            <button class="next-btn">NEXT</button>
         </div>
     </div>
 </div>

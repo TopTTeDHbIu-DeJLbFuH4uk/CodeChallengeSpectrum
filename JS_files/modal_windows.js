@@ -1,10 +1,10 @@
-const modalWindowDifficultyEasy = document.getElementById('modalWindowDifficultyEasy');
-const containerPopupModalWindowEasy = document.getElementById('containerPopupModalWindowEasy');
-modalWindowDifficultyEasy.addEventListener('click', () => {
-   containerPopupModalWindowEasy.style.display = 'block';
+const modalWindowDifficultEasy = document.getElementById('modalWindowDifficultyEasy');
+const containerModalWindowEasyDifficult = document.getElementById('containerModalWindowEasyDifficult');
+modalWindowDifficultEasy.addEventListener('click', () => {
+   containerModalWindowEasyDifficult.style.display = 'block';
 });
 
-const closeWindow = document.querySelector('.btn-close-easy');
+const closeWindow = document.querySelector('.close-btn');
 closeWindow.addEventListener('click', () => {
-   containerPopupModalWindowEasy.style.display = 'none';
+   containerModalWindowEasyDifficult.style.display = 'none';
 });
