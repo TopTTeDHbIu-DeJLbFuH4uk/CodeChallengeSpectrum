@@ -2,7 +2,7 @@
     position: absolute;
     top: 190px;
     left: 600px;
-    /*display: none;*/
+    display: none;
 }
 
 @property --gradient-angle {
