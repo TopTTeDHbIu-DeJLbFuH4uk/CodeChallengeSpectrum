@@ -2,8 +2,7 @@
     position: absolute;
     top: 190px;
     left: 600px;
-
-    display: none;
+    /*display: none;*/
 }
 
 @property --gradient-angle {
@@ -24,10 +23,9 @@
     height: 500px;
     width: 700px;
     background: var(--clr-1);
-    border-radius: 0.5rem;
 
+    border-radius: 0.5rem;
     position: relative;
-    /*overflow-y: scroll;*/
 }
 
 .modal-window-easy-difficult::before,
@@ -50,6 +48,11 @@
 
 .modal-window-easy-difficult::after {
     filter: blur(3.5rem);
+}
+
+.modal-content {
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 @keyframes rotation {
@@ -90,16 +93,41 @@
     user-select: none;
 }
 
-
 .text-modal-window-easy-difficult {
     padding: 10px 15px 15px;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #c1c1c1;;
-    font-weight: bold;
+    font-weight: 500;
     text-align: justify;
 }
+
+.knowledge-requirements {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #c1c1c1;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.necessary-knowledge-easy {
+    padding-right: 15px;
+    list-style: decimal;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #c1c1c1;
+    line-height: 30px;
+}
+
+.necessary-knowledge-easy li::before {
+    margin-right: 5px; /* Добавьте немного отступа между маркером и текстом */
+    padding-left: 0;
+}
+
 
 /* BUTTON CLOSE */
 .container-btn {
@@ -109,6 +137,7 @@
     max-height: 100px;
     padding-top: 20px;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 60px;
 }
 
 .close-btn{
